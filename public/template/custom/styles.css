@@ -1,0 +1,40 @@
+div.KyDivResponsive {
+  width: 100%;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 200px) {
+  .card-header {
+    grid-template-columns: none;
+  }
+}
+.left {
+    width: auto;
+    float: none;
+}
+.right {
+    float: right;
+    width: auto;
+}
+
+.select2Error{display:block !important;padding-top:0;padding-bottom:10px;}
+
+.select2{padding-bottom:0px;}
+
+.fa-check-circle{
+	color:green;
+}
+.fa-file{
+	color:brown;
+}
+.fa-info-circle{
+	color:blue;
+}
+
+ #planId{
+	   background-color:#fff8dc; 
+  }

@@ -1,0 +1,9 @@
+<div>
+@if(Route::is('assignment'))
+    <livewire:transaction.assignment.show/>
+@endif
+@if(Route::is('my-assignment'))
+	 <livewire:transaction.assignment.show-my/>
+ @endif
+	 <livewire:transaction.assignment.create/>	 
+</div>

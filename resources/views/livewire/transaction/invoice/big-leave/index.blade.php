@@ -1,0 +1,12 @@
+<div>
+@if(Route::is('invoice.big-leave'))
+    <livewire:transaction.invoice.big-leave.show/>
+@endif
+@if(Route::is('invoice.big-leave-claim'))
+	 <livewire:transaction.invoice.big-leave.show-claim/>
+ @endif
+	<livewire:transaction.invoice.big-leave.create/>
+	<livewire:transaction.invoice.big-leave.update/>
+    <livewire:transaction.invoice.big-leave.delete/>
+		<livewire:transaction.invoice.big-leave.paid/>
+</div>

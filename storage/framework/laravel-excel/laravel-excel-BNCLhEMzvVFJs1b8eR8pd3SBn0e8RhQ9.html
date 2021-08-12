@@ -1,0 +1,120 @@
+<div class="content-wrapper">
+ 
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Pengajuan Cuti</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+              <li class="breadcrumb-item active">Pengajuan Cuti</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <div class="left">
+                <div class="card-tools">
+                  <div class="input-group input-group-sm" style="width: 350px;">
+					<div class="input-group-prepend" style="max-width:175px;">
+						<span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+					</div>																
+					<input wire:model="startDate" type="text" id="startDateId" class="form-control float-right" onchange='Livewire.emit("selectEndDate", this.value)' placeholder="Tanggal awal ..." autocomplete="off">
+                    <div class="input-group-append input-group-sm" style="max-width:175px;">
+						<div class="input-group-prepend">
+							 <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+						</div>																
+					<input wire:model="endDate" type="text" id="endDateId" class="form-control" onchange='Livewire.emit("selectEndDate", this.value)' placeholder="Tanggal akhir ..." autocomplete="off">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="card-tools">
+                  <div class="input-group input-group-sm" style="width: 150px;">
+				  <button wire:click="dayOfExport" type="button" class="btn btn-info btn-sm"><i class="fa fa-file-excel"></i> Export</button>
+				  </div>
+                </div>
+              </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0" style="height: 460px;">
+			
+                <table class="table table-head-fixed text-nowrap">
+                  <thead>
+                    <tr>
+                       <th>NRP</th>					
+                       <th>Nama</th>
+                        <th>Berangkat </th>
+                        <th>Mulai</th>
+                        <th>Selesai</th>
+			            <th>Kembali</th>			
+                        <th>On Site</th>						
+                        <th>Approv</th>
+						<th>Status</th>
+						<th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+								                                    <tr>
+                                        <td> 100021</td>									
+                                        <td>Iwan Taruna</td>
+                                        <td>03/Aug/2021</td>
+                                        <td>03/Aug/2021</td>										
+                                        <td>16/Aug/2021</td>
+                                        <td>21/Aug/2021</td>											
+                                        <td>23/Aug/2021</td>										
+                                        <td>
+										
+																																	<a href="#"><span class="badge bg-danger">Waiting</span></a>
+																								
+												
+											
+										
+                                        </td>										
+                                        <td>
+										                                             <span class="badge bg-success">Aktif</span>
+											
+                                        </td>
+										<td>
+																					
+										<a type="button" wire:click="$emitTo('transaction.day-of.detail','detailDayOf',1)" title="Detail"><i class="fa fa-info-circle fa-lg"></i></a>&nbsp;&nbsp;&nbsp; 
+																					 											
+																			</td>
+                                    </tr>
+								                  </tbody>
+			   
+                </table>
+					 
+        <p>
+            Showing 1 to 1 out of 1 items
+        </p>
+        <p>
+				<div>
+    </div>
+
+              </div>
+			  
+              <!-- /.card-body -->
+            </div> 
+            <!-- /.card -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+</div>
+
