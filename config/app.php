@@ -28,7 +28,7 @@ return [
 
     'env' => env('APP_ENV', 'production'),
     'company'=>'PT Riung Mitra Lestari',
-    'title'=>'RML - HR Improvement', 
+    'title'=>'RML SYSTEM', 
 	'developer'=>'Biraldino Studio',	
     
 
