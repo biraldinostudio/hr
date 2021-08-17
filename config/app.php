@@ -27,7 +27,7 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
-    'company'=>'PT KONFIDENSIAL',
+    'company'=>'PT KONFIDENSIAL CHOY',
     'title'=>'HR SYSTEM', 
 	'developer'=>'Biraldino Studio',	
     
