@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'RM-HR'),
+    'name' => env('APP_NAME', 'HR-SYSTEM'),
 
     /*
     |--------------------------------------------------------------------------
@@ -27,8 +27,8 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
-    'company'=>'PT Riung Mitra Lestari',
-    'title'=>'RML SYSTEM', 
+    'company'=>'PT KONFIDENSIAL',
+    'title'=>'HR SYSTEM', 
 	'developer'=>'Biraldino Studio',	
     
 
